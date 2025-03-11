@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Timer App</h1>
+        <div class="modes">
+            <button onclick="setMode(25)">Pomodoro (25 min)</button>
+            <button onclick="setMode(5)">Short Break (5 min)</button>
+            <button onclick="setMode(15)">Long Break (15 min)</button>
+        </div>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+            <button onclick="stopTimer()">Stop</button>
+        </div>
+        <audio id="alarmSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
